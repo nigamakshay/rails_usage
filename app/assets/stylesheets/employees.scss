@@ -1,0 +1,28 @@
+// Place all the styles related to the Employees controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.employeesGrid {
+  width: 1000px;
+  height: max-content !important;
+}
+
+.employeesGrid .ui-grid-viewport {
+  height: max-content !important;
+  max-height: 250px;
+}
+  
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  width: 100px;
+  text-align: center;
+  border: 1px solid black; 
+}
+ 
+table th {
+  width: 100px;
+  border: 1px solid black; 
+} 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="angularUsage">
+
+  <head>    
+    <title>Rails Usage</title>
+    <script src="/release/ui-grid.validate.min.js"></script>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>   
+  </head>
+
+  <body>
+    <%= render 'layouts/header' %>
+    <%= yield %>
+
+  </body>
+
+</html>

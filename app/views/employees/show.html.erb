@@ -1,0 +1,24 @@
+ <div style="text-align: center;"><h2>Employees List</h2></div>
+
+<div style="align-self: right;display: flex;justify-content: center;">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th> 
+        <th>Name</th> 
+        <th>Gender</th> 
+        <th>Designation</th> 
+        <th>Department</th>
+      </tr>  
+    <thead>
+      
+    <tbody>
+    <% @employees.each do |employee| %>
+      <% cache employee do %>
+        <%= render employee %>
+      <% end %>
+    <% end %>
+    <tbody>
+  </table>
+</div>
+ 

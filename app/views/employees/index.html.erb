@@ -1,0 +1,19 @@
+
+<script>
+    var employees = <%= raw @employees%>; //@employees is returned from employees_controller.rb
+</script>
+<div style="text-align: center; font-size: x-large; font-weight: bold;"> Manage Employees </div>
+<div style="text-align: center;">
+  
+  <br>
+  <br>
+  <div ng-controller="EmployeesCtrl">
+    <div ui-grid="gridOptions" class="employeesGrid" ui-grid-edit ui-grid-row-edit ui-grid-validate ui-grid-cellNav style="display: inline-block"></div>
+    <br>
+    <br>
+    <button ng-click="addEmployee()"> Add Employee</button>
+    <button ng-click="save()"> Save </button>
+    <button ng-click="cancel()"> Cancel </button>    
+  </div>
+</div>
+

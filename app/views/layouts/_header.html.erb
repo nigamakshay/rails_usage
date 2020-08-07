@@ -1,0 +1,16 @@
+<div id="user_header">  
+  <% if current_user %>  
+    <div> 
+      <div style="float:left"><%= link_to "View Employees", "employees/show" %> | <%= link_to "Manage Employees", employees_path %></div>
+      <div style="float:right"> Logged in as <%= current_user.email %>. | <%= link_to "Log Out", logout_path %></div>     
+    </div>
+  <% else %>  
+    <div> <%= link_to "Sign Up", signup_path %> or <%= link_to "Log In", login_path %> </div>
+  <% end %>   
+</div>  
+
+<% flash.each do |key, value| %>  
+  <%= content_tag(:div, class: "alert alert-#{key}") do %>  
+    <p><%= value %></p>  
+  <% end %>  
+<% end %>  
